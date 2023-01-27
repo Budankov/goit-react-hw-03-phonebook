@@ -18,5 +18,5 @@ export default Filter;
 
 Filter.propTypes = {
   value: PropTypes.string.isRequired,
-  onChengeFilter: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func.isRequired,
 };

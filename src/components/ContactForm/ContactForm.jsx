@@ -1,3 +1,5 @@
+import Button from '@mui/material/Button';
+import AddIcon from '@mui/icons-material/Add';
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './ContactForm.module.scss';
@@ -52,9 +54,18 @@ class ContactForm extends Component {
             required
           />
         </label>
-        <button className={styles.submitBtn} type="submit">
+        <Button
+          type="submit"
+          variant="contained"
+          size="small"
+          sx={{
+            backgroundColor: '#4caf50',
+            '&:hover': { backgroundColor: '#29972c' },
+          }}
+          startIcon={<AddIcon />}
+        >
           Add contact
-        </button>
+        </Button>
       </form>
     );
   }
